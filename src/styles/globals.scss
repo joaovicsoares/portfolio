@@ -1,1 +1,13 @@
 @import "bootstrap/scss/bootstrap";
+
+[data-bs-theme="dark-blue"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: #101630;
+    --bs-body-bg-rgb: #{to-rgb(#101630)};
+    --bs-tertiary-bg: #1A213B;
+
+    .navbar {
+        --bs-navbar-bg: #1A213B;
+    }
+}
