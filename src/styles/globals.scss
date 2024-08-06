@@ -1,13 +1,22 @@
 @import "bootstrap/scss/bootstrap";
 
+
 [data-bs-theme="dark-blue"] {
     --bs-body-color: var(--bs-white);
     --bs-body-color-rgb: #{to-rgb($white)};
     --bs-body-bg: #101630;
     --bs-body-bg-rgb: #{to-rgb(#101630)};
-    --bs-tertiary-bg: #1A213B;
+    --bs-tertiary-bg: #00145a;
 
     .navbar {
-        --bs-navbar-bg: #1A213B;
+        background-color: #1A213B;
+        --bs-navbar-brand-color: #fff;
+        --bs-navbar-color: #fff;
+        --bs-navbar-toggler-border-color: #fff;
+
+    }
+
+    .navbar-toggler {
+        background-color: #fff;
     }
 }
