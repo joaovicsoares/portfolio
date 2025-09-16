@@ -78,13 +78,22 @@ Minha atuação envolve o desenvolvimento de aplicações web, automações, int
         <div class="container">
             <h2 class="section-title fade-in">Entre em Contato</h2>
             <div class="contact-content">
-                <form class="contact-form fade-in animate-delay-1">
-                    <input type="text" placeholder="Seu Nome" required>
-                    <input type="email" placeholder="Seu E-mail" required>
-                    <input type="text" placeholder="Assunto" required>
-                    <textarea rows="5" placeholder="Sua Mensagem" required></textarea>
-                    <button type="submit" class="cta-button">Enviar Mensagem</button>
-                </form>
+                <div class="formContainer">
+                    <form class="contact-form fade-in animate-delay-1">
+                    <!-- <form action="https://api.staticforms.xyz/submit" method="POST" class="contact-form fade-in animate-delay-1"> -->
+                        <input type="text" name="name" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                        <input type="text" name="subject" placeholder="Assunto">
+                        <textarea rows="5" name="message" placeholder="Sua Mensagem" required></textarea>
+                        <!-- <input type="hidden" name="apiKey" value="sf_n885nccf8j56idlckbjj6mc7"> -->
+                        <button type="submit" class="cta-button">Enviar Mensagem</button>
+                    </form>
+                    <div class="formMessage">
+                        <div class="loading hidden">Enviando...
+                            <div class="spinner hidden"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="contact-info fade-in animate-delay-2">
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
@@ -100,7 +109,7 @@ Minha atuação envolve o desenvolvimento de aplicações web, automações, int
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">💼</div>
-                        <span>linkedin.com/in/seuperfil</span>
+                        <span><a class="linkedin" href="https://www.linkedin.com/in/jo%C3%A3o-victor-soares-2573352ba/" target="_blank">Linkedin</a></span>
                     </div>
                 </div>
             </div>
