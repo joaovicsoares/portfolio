@@ -46,7 +46,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             loading.classList.remove("hidden");
             spinner.classList.remove("hidden");
             const formData = {
-                name: form.querySelector("[name='name']"),value,
+                name: form.querySelector("[name='name']").value,
                 email: form.querySelector("[name='email']").value,
                 subject: form.querySelector("[name='subject']").value,
                 message: form.querySelector("[name='message']").value
