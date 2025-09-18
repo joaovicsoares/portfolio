@@ -52,13 +52,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 message: form.querySelector("[name='message']").value
             };
             try {
-                const response = await fetch("/api/contact", {
+                const response = await fetch("https://portfolio-ctaq.vercel.app/api/contact", {
                     method: "POST",
                     headers: {"Content-Type": "application/json"},
                     body: JSON.stringify(formData)
                 });
                 const data = await response.json();
-                if (response.ok && data.success) {
+                if (response.ok) {
                     formMessage.innerHTML = "✅ Email enviado com sucesso!";
                 } else {
                     formMessage.innerHTML = "❌ Ocorreu um erro, tente novamente."
